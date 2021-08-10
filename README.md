@@ -8,6 +8,9 @@ You will need to input your SRP account# in the code(replace the x's) before run
 Chromedriver downloads URL:
 https://sites.google.com/a/chromium.org/chromedriver/downloads
 
+
+*Ver1.1 Update 09Aug21, added options for Selenium webdriver to run headless so that browser does not need to load visually.
+
 Requirements:
 chromedriver(download URL listed above)
 
