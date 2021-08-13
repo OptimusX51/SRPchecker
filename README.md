@@ -3,11 +3,11 @@ SRP irrigation schedule checker
 This app will check the SRP irrigation schedule and return the posted irrigation start time.
 
 *Ver1 - SRP_Check.py
-You will need to input your SRP account# in the code(replace the x's) before running and also the path address to your downloaded chromedriver(add path addres before \chromedriver.exe).
-*Make sure to download the chromedriver version that matches your current browser version.  Version can be seen in 'About' menu in browser.
+You will need to edit the code to input your SRP account# (replace the x's) before running and also the path address to your downloaded chromedriver(add path addres before \chromedriver.exe).
+*Make sure to download the chromedriver version that matches your current browser version.  Version can be seen in 'About' menu section in browser.
 
 *Ver2 - SRPcheck_GUI.py
-Now editing code with account number and chromium path is no longer needed.  Complete proccess to check SRP irrigation schedule can be done via graphical user interface.  Just run the python code, fill in the blanks and hit the "Get schedule" button. 
+No code editing required.  Complete proccess to check SRP irrigation schedule can be done via graphical user interface.  Just run the python code, fill in the blanks and hit the "Get schedule" button. 
 
 Chromedriver downloads URL:
 https://sites.google.com/a/chromium.org/chromedriver/downloads
