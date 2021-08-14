@@ -19,9 +19,22 @@ options = Options()
 options.add_argument('--headless')
 options.add_argument('--disable-dev-shm-usage')
 
+def about():
+    messagebox.showinfo( "About","Created by OptimusX51 \n https://github.com/OptimusX51/SRPchecker")
+
 #TK window
 win = Tk()
 win.title("SRP Irrigation Schedule Checker")
+
+#Menu bar
+menubar = Menu(win)
+filemenu = Menu(menubar, tearoff=0)
+filemenu.add_command(label='Exit', command = win.quit)
+menubar.add_cascade(label='File', menu=filemenu)
+helpmenu = Menu(menubar, tearoff=0)
+helpmenu.add_command(label='About...', command=about)
+menubar.add_cascade(label="Help", menu=helpmenu)
+
 ###Window Width x Height
 win.geometry("300x200")
 
@@ -121,8 +134,5 @@ l3 = Label(win, textvariable=msg).place(relx=.5, rely=.8, anchor= CENTER)
 progress = Progressbar(win, orient = HORIZONTAL, variable=prog, 
               length = 100, mode = 'determinate').place(relx=.5, rely=.9, anchor=CENTER, relwidth=.8)
 
-
-print("still working")
-
-
+win.config(menu=menubar)
 win.mainloop()
